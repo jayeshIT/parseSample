@@ -1,0 +1,3 @@
+<Alloy>
+	<Window class="win_tab_news" id="win_tab_news" navBarHidden="true"></Window>
+</Alloy>

@@ -1,0 +1,29 @@
+<Alloy>
+	<Window class="win_signupsocial" id="win_signupsocial">
+		<RightNavButton platform="ios">
+			<Button title="Next" id="rightButton"/>
+		</RightNavButton>
+		<View id="image_user">
+			<ImageView id="userimage" />
+			<Button id="upload" />
+		</View>
+		<ScrollView id="AddMyprofile">
+			<TextField id="txtFullName" class="textfields"/>
+			<View class="divider" id="divider"/>
+			<TextField id="txtUserName" class="textfields"/>
+			<View class="divider" id="divider"/>
+			<TextField id="txtEmail"class="textfields"/>
+			<View class="divider" id="divider"/>
+			<TextField id="txtPassword" class="textfields"/>
+			<View class="divider" id="divider"/>
+			<TextField id="txtconfirmPassword" class="textfields"/>
+		</ScrollView>
+		<View id="bottomView" class="bottomView">
+			<View class="topView">
+				<ImageView id="chkmark" />
+				<Label id="postActivity" />
+			</View>
+			<Label id="termsandcond"></Label>
+		</View>
+	</Window>
+</Alloy>

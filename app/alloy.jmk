@@ -1,0 +1,73 @@
+function downsize(event, logger) {
+    var wrench = require("wrench"), path = require("path"), fs = require("fs"), imagemagick = require("imagemagick"), U = require('../../utils');
+
+    // Generator
+
+    function generator(source, target, percentage) {
+
+        // File (or 9-patch version) doesn't exist or (non 9-patch) file is older
+        if (!fs.existsSync(target.replace(/(\.png)$/, '.9$1')) && (!fs.existsSync(target) || (fs.statSync(source).mtime > fs.statSync(target).mtime))) {
+
+            if (percentage === '100%') {
+                logger.info('Copying: ' + target);
+                U.copyFileSync(source, target);
+
+            } else {
+                logger.info('Downsizing ' + percentage + ': ' + target);
+
+                var target_dir = path.dirname(target);
+
+                if (!path.existsSync(target_dir)) {
+                    wrench.mkdirSyncRecursive(target_dir, 0777);
+                }
+
+                imagemagick.convert([source, '-resize', percentage, target], function(error, m) {
+                    error && logger.error('Failed generating "' + target + '" because of: ' + error.message);
+                });
+            }
+        }
+    }
+
+    // Walker
+
+    function walk(dir) {
+        wrench.readdirSyncRecursive(dir).forEach(function(file) {
+
+            // Catch retina files, except for iPhone 5 (retina only) ones
+            if (file.indexOf('@2x') > 0 && file.indexOf('-568h@2x') < 0) {
+                var source = path.join(dir, file);
+                var target = path.join(dir, file.replace('@2x', ''));
+
+                // iOS
+                if (event.alloyConfig.platform === 'ios') {
+
+                    // Non-retina
+                    generator(source, target, '50%');
+
+                    // Android
+                } else if (event.alloyConfig.platform === 'android') {
+                    target = target.replace(/(\/iphone)?(\/images)(\/.+\/)?(.+)$/, '/android$2/_DENSITY_$3$4');
+
+                    // xhdpi
+                    generator(source, target.replace('_DENSITY_', 'res-xhdpi'), '100%');
+
+                    // hdpi
+                    generator(source, target.replace('_DENSITY_', 'res-hdpi'), '75%');
+
+                    // mdpi
+                    generator(source, target.replace('_DENSITY_', 'res-mdpi'), '50%');
+                }
+            }
+        });
+    }
+
+    // Un-retina /app to find main assets as well as in themes and widgets
+    walk(event.dir.home);
+
+    // Un-retina /Resources since /app assets have already been copied before this hook
+    walk(event.dir.resources);
+}
+
+task("pre:compile", function(event, logger) {
+    downsize(event, logger);
+});

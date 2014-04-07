@@ -1,0 +1,7 @@
+"#win_tab_news":
+{
+	navBarHidden : true,
+	exitOnClose : true,
+	fullscreen : true,
+	backgroundColor : Alloy.CFG.colors.teal_blue
+}

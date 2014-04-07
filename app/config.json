@@ -1,0 +1,30 @@
+{
+    "global": {
+        "colors": {
+            "color_white": "#FFFFFF",
+            "color_black": "black",
+            "color_brown" : "#5C5B57",
+            "color_white_brown" : "#DFDFD9",
+            "teal_blue" :"#002D46"
+        },
+        "parsekeys": {
+            "Applicationid": "oO5FbViwdXyo3XxBjpYfXsYFdP8GDKgqgMzKyAUr",
+            "javascript_Key": "UX5LHbDB327lzF4QPd8HxUh6CgZujafaePvPfsWB",
+            "restAPIKey": "klEKNY1yVfn95yaUBHAAXTIG3MpXxHpf7x9ZY0BT"
+        },
+        "facebook": {
+            "appID" : "262743273886351"
+        },
+        "twitter": {},
+        "googleplus": {},
+        "linkedin": {}
+    },
+    "env:development": {},
+    "env:test": {},
+    "env:production": {},
+    "os:android": {},
+    "os:blackberry": {},
+    "os:ios": {},
+    "os:mobileweb": {},
+    "dependencies": {}
+}

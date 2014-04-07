@@ -1,0 +1,12 @@
+<Alloy>
+	<Window class="win_login" id="win_login">
+		<View class="login_view" id="login_view">
+			<TextField class="login_textfield" id="email_textfield"/>
+			<View class="divider" id="divider"/>
+			<TextField class="login_textfield" id="password_textfield"/>
+		</View>
+		<Button class="login_button" id="login_button"/>
+		<Button class="signin_button" id="signin_button"/>
+		<Label id="forgot_password_lbl" class="forgot_password_lbl"/>
+	</Window>
+</Alloy>

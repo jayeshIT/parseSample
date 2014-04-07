@@ -1,0 +1,20 @@
+"#tab0":
+{
+	icon : '/images/home.png',
+	title : 'Home'
+},
+"#tab1":
+{
+	icon : '/images/news.png',
+	title :'News'
+},
+"#tab2":
+{
+	icon : '/images/agenda.png',
+	title : 'Events'
+},
+"#tab3":
+{
+	icon : '/images/more.png',
+	title :'More'
+}

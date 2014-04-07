@@ -1,0 +1,125 @@
+"#win_home":
+{
+	navBarHidden:true,
+	height : '100%',
+	width : '100%'
+},
+".main_view":
+{
+	height : '100%',
+	width : '100%',
+	backgroundColor :' transparent'
+},
+
+".login_view":
+{
+	//height : Alloy.CFG.GlobalSize.index_login_view_height,
+ 	height : '50%',
+    width : '100%'
+},
+".commonView":
+{
+	height : '20%',
+	width : '80%',
+	borderRadius  : 3,
+	backgroundColor : Alloy.CFG.colors.color_white_brown
+},
+".common_imageview":
+{
+	 left : '10%',
+     width : '12%',
+     height : '65%',
+},
+".common_lbl":
+{
+	left : '25%',
+    color : Alloy.CFG.colors.teal_blue,
+    font : {
+		fontSize : Alloy.CFG.android_fonts.win_home_27,
+		fontFamily : Alloy.Globals.fontFamily,
+		fontWeight : 'bold' 
+		
+    }
+},
+"#facecbook_view":
+{
+	top : 0
+},
+"#facebook_imageview":
+{
+    backgroundImage : '/facebook.png'
+},
+"#facebook_lbl":
+{
+    text : 'Facebook signIn'
+},
+"#twitter_view":
+{
+	top : '25%'
+},
+"#twitter_imageview":
+{
+     backgroundImage : '/twitter.png'
+},
+"#twitter_lbl":
+{
+    text : 'Twitter signIn'
+},
+"#google_view":
+{
+	top : '50%'
+},
+"#google_imageview":
+{
+	backgroundImage : '/googleplus.png'
+},
+"#google_lbl":
+{
+	text : 'Google Plus signIn'
+},
+"#linkedin_view":
+{
+	top : '75%'
+},
+"#linkedin_imageview":
+{
+	backgroundImage : '/linkedin.png'
+},
+"#linkedin_lbl":
+{
+	text : 'LinkedIn signIn'
+},
+".bottomView":
+{
+	bottom : 0,
+	height : '20%',
+	width : '100%',
+	layout :'vertical'
+},
+".alreadylogin_lbl":{
+	top : '2%',
+	width : '100%',
+	textAlign : 'center',
+	font :
+	{
+		fontSize :Alloy.CFG.android_fonts.win_home_27,
+		fontFamily :Alloy.Globals.fontFamily
+	},
+	text : 'Already Signed in ?',
+	color : Alloy.CFG.colors.color_white_brown
+},
+".login_lbl":
+{
+	top : '2%',
+	width : '100%',
+	textAlign : 'center',
+	font :
+	{
+		fontSize : Alloy.CFG.android_fonts.win_home_27,
+		fontWeight : 'bold',
+		fontFamily : Alloy.Globals.fontFamily
+	},
+	text : 'Login now',
+	color : Alloy.CFG.colors.color_white_brown
+}
+

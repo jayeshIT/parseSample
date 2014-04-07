@@ -1,0 +1,145 @@
+"#win_home":
+{
+	orientationModes : [Titanium.UI.PORTRAIT],
+	statusBarHidden : true,
+	navBarHidden :true,
+	exitOnClose : true,
+	fullscreen : true,
+	backgroundColor : Alloy.CFG.colors.teal_blue
+},
+"#main_view":
+{
+	height : Alloy.CFG.platformHeight,
+	width :Alloy.CFG.platformWidth,
+	backgroundColor :' transparent'
+},
+".login_view":
+{
+	//height : '50%',
+    height : Alloy.CFG.UI.win_home_login_view_height,
+    width : Alloy.CFG.platformWidth
+},
+".commonView":
+{
+	//height : '20%',
+	height :Alloy.CFG.UI.win_home_commonView_height,
+	//width : '80%',
+	width : Alloy.CFG.UI.win_home_commonView_width,
+	borderRadius  : 3,
+	backgroundColor : Alloy.CFG.colors.color_white_brown
+},
+".common_imageview":
+{
+	 //left : '10%',
+     left : Alloy.CFG.UI.win_home_common_imageview_left,
+     width : Alloy.CFG.UI.win_home_common_imageview_width,
+     //width : '17%',
+     //height : '70%',
+     height : Alloy.CFG.UI.win_home_common_imageview_height
+},
+".common_lbl":
+{
+	//left : '29%',
+    left: Alloy.CFG.UI.win_home_common_lbl_left,
+    color : Alloy.CFG.colors.teal_blue,
+    font : {
+        fontSize : Alloy.CFG.android_fonts.win_home_27,
+		fontFamily : Alloy.Globals.fontFamily,
+		fontWeight : 'bold' 
+		
+    }
+},
+"#facecbook_view":
+{
+	top : 0
+},
+"#facebook_imageview":
+{
+     backgroundImage : '/images/facebook.png'
+},
+"#facebook_lbl":
+{
+    text : 'Facebook signIn'
+},
+"#twitter_view":
+{
+	//top : '25%'
+	top : Alloy.CFG.UI.win_home_twitter_top
+},
+"#twitter_imageview":
+{
+    backgroundImage : '/images/twitter.png'
+},
+"#twitter_lbl":
+{
+    text : 'Twitter signIn'
+},
+"#google_view":
+{
+	//top : '50%'
+	top : Alloy.CFG.UI.win_home_google_view_top
+},
+"#google_imageview":
+{
+	backgroundImage : '/images/googleplus.png'
+},
+"#google_lbl":
+{
+	text : 'Google Plus signIn'
+},
+"#linkedin_view":
+{
+	//top : '75%'
+	top : Alloy.CFG.UI.win_home_linkedin_view_top
+},
+"#linkedin_imageview":
+{
+	backgroundImage : '/images/linkedin.png'
+},
+"#linkedin_lbl":
+{
+	text : 'LinkedIn signIn'
+},
+".bottomView":
+{
+	bottom : 0,
+	//height : '20%',
+	height : Alloy.CFG.UI.win_home_bottomView_height,
+	//width : '100%',
+	width : Alloy.CFG.platformWidth,
+	layout :'vertical'
+},
+".alreadylogin_lbl":{
+	//top : '2%',
+	top : Alloy.CFG.UI.win_home_alreadylogin_lbl_height,
+	//width : '100%',
+	width : Alloy.CFG.platformWidth,
+	textAlign : 'center',
+	font :
+	{
+		fontSize : Alloy.CFG.android_fonts.win_home_27,
+		fontFamily : Alloy.Globals.fontFamily
+	},
+	text : 'Already Signed in ?',
+	color : Alloy.CFG.colors.color_white_brown
+},
+".login_lbl":
+{
+	//top : '2%',
+	top : Alloy.CFG.UI.win_home_alreadylogin_lbl_height,
+	//width : '100%',
+	width : Alloy.CFG.platformWidth,
+
+	textAlign : 'center',
+	font :
+	{
+		fontSize : Alloy.CFG.android_fonts.win_home_27,
+		fontWeight : 'bold',
+		fontFamily : Alloy.Globals.fontFamily
+	},
+	text : 'Login now',
+	color : Alloy.CFG.colors.color_white_brown
+}
+
+
+

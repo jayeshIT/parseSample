@@ -1,0 +1,5 @@
+"Window[platform=ios]":
+{
+	tabBarHidden : true,
+	backgroundColor : Alloy.CFG.colors.teal_blue
+}

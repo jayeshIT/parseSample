@@ -1,0 +1,150 @@
+"#win_signupsocial":
+{
+	orientationModes : [Titanium.UI.PORTRAIT],
+	navBarHidden :true,
+	exitOnClose : false,
+	fullscreen : true,
+	backgroundColor : Alloy.CFG.colors.teal_blue
+},
+"#image_user":{
+	top:"50dp",
+	width:Alloy.CFG.UI.socialsignupProfile,
+	height:Alloy.CFG.UI.socialsignupProfile,
+	borderRadius:Alloy.CFG.UI.half_socialsignupProfile,
+	backgroundColor:Alloy.CFG.colors.color_white_brown
+},
+"#upload":{
+	width:"70dp",
+	height: "25dp",
+	bottom:"-1dp",
+	opacity:0.5,
+	title:"Upload",
+	font:{
+		fontSize:12,
+		fontFamily: Alloy.Globals.fontFamily
+		},
+	color:'blue',
+	paddingLeft:10,
+	paddingRight:10,
+	borderRadius:3
+},
+
+"#userimage":{
+	width:Alloy.CFG.UI.socialsignupProfile,
+	height:Alloy.CFG.UI.socialsignupProfile,
+	borderRadius:Alloy.CFG.UI.half_socialsignupProfile,
+	top:0,
+	defaultImage:'/images/default_profile_pic.png'
+},
+
+"#AddMyprofile":
+{
+	//top : Alloy.CFG.UI.socialsignupSv,
+	top : '30%',
+	left  : 10,
+	right : 10,
+	height : Ti.UI.SIZE,
+	//bottom : '20%',
+	contentWidth : Ti.UI.FILL,
+	contentHeight : Ti.UI.SIZE,
+	showVerticalScrollIndicator : false,
+    showHorizontalScrollIndicator : false,
+    layout : 'vertical',
+    backgroundColor : Alloy.CFG.colors.color_white_brown,
+    borderRadius : 4
+},
+".textfields":
+{
+	left : 10,
+	right : 10,
+	height:'10%',
+	maxLength : 50,
+	autocorrect:false,
+	font :
+	{
+		fontSize :Alloy.CFG.android_fonts.win_home_27,
+		fontFamily : Alloy.Globals.fontFamily
+	},
+	color : Alloy.CFG.colors.color_black,
+	returnKeyType : Ti.UI.RETURNKEY_NEXT,
+	paddingLeft:2,
+	backgroundColor:"transparent",
+	autocapitalization : Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE,
+},
+".divider":
+{
+	left: 0,
+	right : 0,
+	height : 1,
+	backgroundColor : 'gray'
+},
+
+"#txtFullName":
+{
+	hintText : "Name"	
+},
+"#txtUserName":
+{
+	hintText :'Username'
+},
+"#txtEmail":
+{
+	hintText : 'Email'	
+},
+"#txtPassword":
+{
+	hintText : 'Password',
+	passwordMask : true
+},
+"#txtconfirmPassword":
+{
+	hintText : 'Confirm password',
+	passwordMask : true,
+	returnKeyType : Ti.UI.RETURNKEY_DONE
+},
+
+".bottomView":
+{
+	bottom : 0,
+	left : 0,
+	right : 0,
+	height : '20%'
+},
+".topView":
+{
+	width : Ti.UI.SIZE,
+	top : '0%',
+	height  :'25%',
+	backgroundColor: 'transparent',
+	layout  :'horizontal'
+},
+"#chkmark":
+{
+	height :'100%',
+	width: '14%',
+	image : '/images/blueuncheck.png'	
+},
+"#postActivity":
+{
+	left :10,
+	textAlign: 'left',
+	color : Alloy.CFG.colors.color_white_brown,
+	font :
+	{
+		fontSize : Alloy.CFG.android_fonts.win_login_via_button_forgotlabel,
+		fontFamily : Alloy.Globals.fontFamily
+	}
+},
+"#termsandcond":{
+	textAlign  :'center',
+	color : Alloy.CFG.colors.color_white_brown,
+	font :
+	{
+		fontSize : Alloy.CFG.android_fonts.win_login_via_button_forgotlabel,
+		fontFamily : Alloy.Globals.fontFamily
+	}
+}
+
+
+
+

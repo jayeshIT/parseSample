@@ -1,0 +1,114 @@
+"#win_login":
+{
+	orientationModes : [Titanium.UI.PORTRAIT],
+	statusBarHidden : true,
+	navBarHidden :true,
+	exitOnClose : false,
+	fullscreen : true,
+	backgroundColor : Alloy.CFG.colors.teal_blue
+},
+".login_view":
+{
+	//top : '25%',
+	//left : '5%',
+	//right : '5%',
+	//height : '18%',
+	top : Alloy.CFG.UI.win_login_login_view_top,
+	left : Alloy.CFG.UI.win_login_login_view_left,
+	right :Alloy.CFG.UI.win_login_login_view_left,
+	height :Alloy.CFG.UI.win_login_login_view_height,
+	layout : 'vertical',
+	backgroundColor : Alloy.CFG.colors.color_white_brown,
+	borderRadius : 4
+},
+".login_textfield":
+{
+	left : 2,
+	right :2,
+	paddingLeft : 2,
+	paddingRight  :2,
+	autocorrect : false,
+	returnKeyType : Ti.UI.RETURNKEY_DONE,
+	autocorrect:false,
+	backgroundColor : 'transparent',
+	font :
+	{
+		fontSize :Alloy.CFG.android_fonts.win_home_27,
+		fontFamily : Alloy.Globals.fontFamily
+	},
+	color : Alloy.CFG.colors.color_black
+},
+"#email_textfield":
+{
+	//height :'49%',
+	height : Alloy.CFG.UI.win_login_textfield_height,
+	hintText : 'Username',
+	keyboardType : Titanium.UI.KEYBOARD_EMAIL,
+},
+".divider":
+{
+	left: 0,
+	right : 0,
+	///height : '1%',
+	height  :Alloy.CFG.UI.win_login_divider_height,
+	backgroundColor : 'gray'
+},
+"#password_textfield":
+{
+	//height :'49%',
+	height : Alloy.CFG.UI.win_login_textfield_height,
+	passwordMask : true,
+	hintText : 'Password'
+},
+".button":
+{
+	//height : '7%',
+	height : Alloy.CFG.UI.win_login_button_height,
+	backgroundColor  :Alloy.CFG.colors.color_white_brown,,
+	color : Alloy.CFG.colors.teal_blue,
+	borderRadius  :4,
+	font :
+	{
+		fontSize :Alloy.CFG.android_fonts.win_home_27,
+		fontFamily : Alloy.Globals.fontFamily,
+		fontWeight : 'bold'
+	}
+}
+"#login_button":
+{
+	//top :'45%',
+	//left : '5%',
+	//right : '5%',
+	top : Alloy.CFG.UI.win_login_login_button_height,
+	left : Alloy.CFG.UI.win_login_login_view_left,
+	right :Alloy.CFG.UI.win_login_login_view_left, 
+	title : "Login",
+},
+"#signin_button":
+{
+	//bottom :'10%',
+	//height : '8%',
+	//left : '20%',
+	//right : '20%',
+	bottom : Alloy.CFG.UI.win_login_signin_button_bottom,
+	height :Alloy.CFG.UI.win_login_signin_button_height,
+	left : Alloy.CFG.UI.win_login_signin_button_left,
+	right : Alloy.CFG.UI.win_login_signin_button_left,
+	title : "Login via facebook",
+},
+".forgot_password_lbl":
+{
+	//bottom : '5%',
+	bottom : Alloy.CFG.UI.win_login_forgot_password_lbl_bottom,
+	color  :Alloy.CFG.colors.color_white_brown,,
+	left : 0,
+	right : 0,
+	textAlign : 'center',
+	font :
+	{
+		fontSize :Alloy.CFG.android_fonts.win_login_via_button_forgotlabel,
+		fontFamily : Alloy.Globals.fontFamily,
+		fontWeight : 'bold'
+	}
+}
+

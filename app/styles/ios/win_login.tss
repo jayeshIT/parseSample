@@ -1,0 +1,109 @@
+"#win_login":
+{
+	barColor : Alloy.CFG.colors.color_white_brown
+},
+"#leftButton":
+{
+	font :
+	{
+		fontSize :Alloy.CFG.android_fonts.win_home_27,
+		fontFamily : Alloy.Globals.fontFamily
+	},
+	color : Alloy.CFG.colors.teal_blue,
+},
+".login_view":
+{
+	top : '25%',
+	left : '5%',
+	right : '5%',
+	height : '18%',
+	layout : 'vertical',
+	backgroundColor : Alloy.CFG.colors.color_white_brown,
+	borderRadius : 4
+},
+".login_textfield":
+{
+	left : 2,
+	right :2,
+	paddingLeft : 2,
+	paddingRight  :2,
+	autocorrect : false,
+	returnKeyType : Ti.UI.RETURNKEY_DONE,
+	autocorrect:false,
+	backgroundColor : 'transparent',
+	font :
+	{
+		fontSize :Alloy.CFG.android_fonts.win_home_27,
+		fontFamily : Alloy.Globals.fontFamily
+	},
+	color : Alloy.CFG.colors.color_black
+},
+"#email_textfield":
+{	
+	height :'49%',
+	clearButtonMode : Ti.UI.INPUT_BUTTONMODE_ONFOCUS,
+	keyboardType : Titanium.UI.KEYBOARD_EMAIL,
+	hintText : 'Username'
+},
+".divider":
+{
+	left: 0,
+	right : 0,
+	height : '1%',
+	backgroundColor : 'gray'
+},
+"#password_textfield":
+{
+	height :'49%',
+	clearButtonMode : Ti.UI.INPUT_BUTTONMODE_ONFOCUS,
+	passwordMask : true,
+	hintText : 'Password'
+},
+".login_button":
+{
+	height : 35,
+	backgroundColor  :Alloy.CFG.colors.color_white_brown,,
+	color : Alloy.CFG.colors.teal_blue,
+	borderRadius  :4,
+	font :
+	{
+		fontSize :Alloy.CFG.android_fonts.win_home_27,
+		fontFamily : Alloy.Globals.fontFamily,
+		fontWeight : 'bold'
+	},
+	top :'45%',
+	title : "Login",
+	left : '5%',
+	right : '5%'
+},
+".signin_button":
+{
+	height : 30,
+	backgroundColor  :Alloy.CFG.colors.color_white_brown,,
+	color : Alloy.CFG.colors.teal_blue,
+	borderRadius  :4,
+	font :
+	{
+		fontSize :Alloy.CFG.android_fonts.win_home_27,
+		fontFamily : Alloy.Globals.fontFamily,
+		fontWeight : 'bold'
+	},
+	bottom :'10%',
+	title : "Login via facebook",
+	left : '25%',
+	right : '25%'
+},
+".forgot_password_lbl":
+{
+	bottom : '5%',
+	left : 0,
+	right : 0,
+	textAlign : 'center',
+	color  :Alloy.CFG.colors.color_white_brown,
+	font :
+	{
+		fontSize :Alloy.CFG.android_fonts.win_login_via_button_forgotlabel,
+		fontFamily : Alloy.Globals.fontFamily,
+		fontWeight : 'bold'
+	}
+}

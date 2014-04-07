@@ -1,0 +1,17 @@
+<Alloy>
+	<TabGroup id="tabgroup">
+		<Tab id="tab0" tabindex="0">
+			<Require src="win_tab_home" type="view" id="win_tab_homeID"></Require>
+		</Tab>
+		<Tab id="tab1" tabindex="1">
+			<Require src="win_tab_news" type="view" id="win_tab_newsID"></Require>
+			<!-- <Require src="Events" type="view" id="EventsID"></Require> -->
+		</Tab>
+		<Tab id="tab2" tabindex="2">
+			<Require src="win_tab_events" type="view" id="win_tab_eventsID"></Require>
+		</Tab>
+		<Tab id="tab3" tabindex="3">
+			<Require src="win_tab_more" type="view" id="win_tab_moreID"></Require>
+		</Tab>
+	</TabGroup>
+</Alloy>

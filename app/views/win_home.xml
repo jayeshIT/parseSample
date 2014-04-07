@@ -1,0 +1,60 @@
+<Alloy>
+	<Window class="win_home" id="win_home" platform="android">
+		<View class="main_view" class="main_view">
+			<View class="login_view" id="login_view">
+				<View class="commonView" id="facecbook_view">
+					<ImageView class="common_imageview" id="facebook_imageview">
+					</ImageView>
+					<Label class="common_lbl" id="facebook_lbl"/>
+				</View>
+				<View class="commonView" id="twitter_view">
+					<ImageView class="common_imageview" id="twitter_imageview">
+					</ImageView>
+					<Label class="common_lbl" id="twitter_lbl"/>
+				</View>
+				<View class="commonView" id="google_view">
+					<ImageView class="common_imageview" id="google_imageview">
+					</ImageView>
+					<Label class="common_lbl" id="google_lbl"/>
+				</View>
+				<View class="commonView" id="linkedin_view">
+					<ImageView class="common_imageview" id="linkedin_imageview">
+					</ImageView>
+					<Label class="common_lbl" id="linkedin_lbl"/>
+				</View>
+			</View>
+			<View class="bottomView">
+				<Label class="alreadylogin_lbl" id="alreadylogin_lbl"/>
+				<Label class="login_lbl" id="login_lbl"/>
+			</View>
+		</View>
+	</Window>
+	<NavigationWindow id="navigation" platform="ios">
+		<Window class="win_home" id="win_home">
+			<View class="main_view" id="main_view">
+				<View class="login_view" id="login_view">
+					<View class="commonView" id="facecbook_view">
+						<ImageView class="common_imageview" id="facebook_imageview"/>
+						<Label class="common_lbl" id="facebook_lbl"/>
+					</View>
+					<View class="commonView" id="twitter_view">
+						<ImageView class="common_imageview" id="twitter_imageview"/>
+						<Label class="common_lbl" id="twitter_lbl"/>
+					</View>
+					<View class="commonView" id="google_view">
+						<ImageView class="common_imageview" id="google_imageview"/>
+						<Label class="common_lbl" id="google_lbl"/>
+					</View>
+					<View class="commonView" id="linkedin_view">
+						<ImageView class="common_imageview" id="linkedin_imageview"/>
+						<Label class="common_lbl" id="linkedin_lbl"/>
+					</View>
+				</View>
+				<View class="bottomView">
+					<Label class="alreadylogin_lbl" id="alreadylogin_lbl"/>
+					<Label class="login_lbl" id="login_lbl"/>
+				</View>
+			</View>
+		</Window>
+	</NavigationWindow>
+</Alloy>
